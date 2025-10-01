@@ -105,8 +105,8 @@ export default function TripBudgetBuddy() {
       <div className="mx-auto max-w-5xl p-6">
         <header className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
           <div>
-            <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-fuchsia-700">TripBudgetBuddy 🩷</h1>
-            <p className="text-sm text-slate-600">Cute college travel budget tracker — set a budget, add expenses, and watch the vibes (and savings) ✨</p>
+            <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight" style={{ color: "#ec7699" }}>Budget Girlfriend 🩷</h1>
+            <p className="text-sm text-slate-600">Your personal budget girlfriend for trips. Set a budget, add expenses, and watch the vibes (and savings) fly ✨</p>
           </div>
           <button onClick={resetAll} className="self-start rounded-xl bg-rose-100 px-4 py-2 text-rose-700 hover:bg-rose-200 transition">Reset</button>
         </header>
@@ -158,7 +158,7 @@ export default function TripBudgetBuddy() {
                 value={newCat.color}
                 onChange={(e) => setNewCat(s => ({ ...s, color: e.target.value }))}
               />
-              <button className="rounded-xl bg-fuchsia-600 px-4 py-2 text-white hover:bg-fuchsia-700 transition">Add</button>
+              <button className="rounded-xl bg-fuchsia-600 px-4 py-2 text-white transition"style={{ backgroundColor: "#ec7699" }}>Add</button>
             </form>
             <div className="mt-3 flex flex-wrap gap-2 text-xs">
               {categories.map(c => (
@@ -206,7 +206,7 @@ export default function TripBudgetBuddy() {
                 onChange={e => setDraft({ ...draft, date: e.target.value })}
               />
               <div className="md:col-span-4">
-                <button className="w-full rounded-xl bg-fuchsia-600 px-4 py-2 text-white hover:bg-fuchsia-700 transition">Add expense</button>
+                <button className="w-full rounded-xl px-4 py-2 text-white transition"style={{ backgroundColor: "#ec7699" }}>Add expense</button>
               </div>
             </form>
 
